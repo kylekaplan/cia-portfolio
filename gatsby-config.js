@@ -6,13 +6,13 @@ const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
 module.exports = {
   siteMetadata: {
     // Used for the title template on pages other than the index site
-    siteTitle: `Emilia`,
+    siteTitle: `Strokes By Aly`,
     // Default title of the page
     siteTitleAlt: `Strokes by Aly - Portfolio by Alicia Menezes`,
     // Can be used for e.g. JSONLD
     siteHeadline: `Strokes by Aly - Portfolio by Alicia Menezes`,
     // Will be used to generate absolute URLs for og:image etc.
-    siteUrl: `https://emilia.lekoarts.de`,
+    siteUrl: `https://strokesbyaly.com`,
     // Used for SEO
     siteDescription: `Original work by Alicia Menezes`,
     // Will be set on the <html /> tag
