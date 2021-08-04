@@ -8,9 +8,9 @@ module.exports = {
     // Used for the title template on pages other than the index site
     siteTitle: `Emilia`,
     // Default title of the page
-    siteTitleAlt: `Strokes by Ali - Portfolio by Alicia Menezes`,
+    siteTitleAlt: `Strokes by Aly - Portfolio by Alicia Menezes`,
     // Can be used for e.g. JSONLD
-    siteHeadline: `Strokes by Ali - Portfolio by Alicia Menezes`,
+    siteHeadline: `Strokes by Aly - Portfolio by Alicia Menezes`,
     // Will be used to generate absolute URLs for og:image etc.
     siteUrl: `https://emilia.lekoarts.de`,
     // Used for SEO
@@ -46,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Strokes by Ali - Alicia's Portfolio`,
-        short_name: `Strokes by Ali`,
+        name: `Strokes by Aly - Alicia's Portfolio`,
+        short_name: `Strokes by Aly`,
         description: `Original work by Alicia Menezes`,
         start_url: `/`,
         background_color: `#fff`,
