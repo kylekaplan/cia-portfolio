@@ -5,13 +5,36 @@ const googleAnalyticsTrackingId = process.env.GOOGLE_ANALYTICS_ID
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Emilia - Gatsby Starter Portfolio`,
+    // Used for the title template on pages other than the index site
+    siteTitle: `Emilia`,
+    // Default title of the page
+    siteTitleAlt: `Strokes by Ali - Portfolio by Alicia Menezes`,
+    // Can be used for e.g. JSONLD
+    siteHeadline: `Strokes by Ali - Portfolio by Alicia Menezes`,
+    // Will be used to generate absolute URLs for og:image etc.
+    siteUrl: `https://emilia.lekoarts.de`,
+    // Used for SEO
+    siteDescription: `Original work by Alicia Menezes`,
+    // Will be set on the <html /> tag
+    siteLanguage: `en`,
+    // Used for og:image and must be placed inside the `static` folder
+    siteImage: `/banner.jpg`,
+    // Twitter Handle
+    author: `@lekoarts_de`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-emilia`,
       // See the theme's README for all available options
-      options: {},
+      options: {
+        name: 'Alicia Menezes',
+        location: 'Germany',
+        showThemeAuthor: false,
+        socialMedia: [
+          { title: 'LinkedIn', href: 'https://ae.linkedin.com/in/aliciamenezes' },
+          { title: `Instagram`, href: `https://www.instagram.com/alicia.23/` }
+        ]
+      },
     },
     googleAnalyticsTrackingId && {
       resolve: `gatsby-plugin-google-analytics`,
@@ -23,9 +46,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Emilia - @lekoarts/gatsby-theme-emilia`,
-        short_name: `Emilia`,
-        description: `Minimalistic portfolio/photography site with masonry grid, page transitions and big images. Themeable with Theme UI.`,
+        name: `Strokes by Ali - Alicia's Portfolio`,
+        short_name: `Strokes by Ali`,
+        description: `Original work by Alicia Menezes`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#3182ce`,
